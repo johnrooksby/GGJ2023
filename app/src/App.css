@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: lightgreen;
+  text-shadow: 2pt 2pt 2pt black;
+  margin: 50px;
+  animation: myanim 3s infinite;
+  font-size: 2em;
+
+}
+       
+@keyframes myanim {
+  50% {
+    text-shadow: 2px 4px 2px black;
+    font-size: 2em;
+    color: yellow;
+  }
+}
+
+.h1container {
+  height: 30px;
+}
+
+h2 {
+  color: aliceblue;
+  text-shadow: 2pt 2pt 2pt black;
+  margin: 50px;
+  font-size: 1em;
+}
+
+.description {
+  background-color: white;
+  padding:5px;
+  margin:10px 20px 10px 20px;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px black;
+}
+
+button {
+  width: 60%;
+  margin: 2px;
+  border-radius: 8px;
+  background-color: lightgreen;
+}
+.startButton {
+  animation: butanim 3s infinite;
+  background-color: lightgreen;
+  width: 50%;
+  padding: 10px 20px;
+}
+
+.alive {
+  background-color: lightgreen;
+}
+
+.dead {
+  background-color: red;
+}
+
+@keyframes butanim {
+  50% {
+    box-shadow: 5px 10px 10px black;
+    background-color: yellow;
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
